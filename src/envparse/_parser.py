@@ -18,7 +18,7 @@ class EnvironmentParser:
     ):
         self.prefix = prefix
         self.prefix_delimiter = prefix_delimiter
-        self.items: t.Dict[ItemKey, t.Union[EnvKey, Transformer]] = {}
+        self.items: t.Dict[ItemKey, t.Tuple[EnvKey, Transformer]] = {}
 
     def add(
         self,
