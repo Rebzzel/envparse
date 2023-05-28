@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "python-envparse"
+version = "0.0.1"
+description = "Argparse, but for environment."
+authors = ["Rebzzel"]
+license = "MIT"
+packages = [
+    {include = "envparse", from = "src"}
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
