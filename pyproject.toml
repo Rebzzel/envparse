@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "python-envparse"
-version = "0.0.2"
+version = "0.0.3"
 description = "Argparse, but for environment variables."
 authors = ["Rebzzel"]
 license = "MIT"
