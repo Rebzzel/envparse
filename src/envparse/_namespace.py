@@ -10,5 +10,9 @@ class Namespace(object):
 
         return "Namespace({})".format(", ".join(attrs_repr))
 
+    # need for fix lint errors
+    def __getattr__(self, key):
+        return self.__dict__[key]
+
 
 __all__ = ["Namespace"]
